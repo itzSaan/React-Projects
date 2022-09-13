@@ -46,7 +46,6 @@ function handleChange(event) {
                     ...prev,
                     pwd: generatedPassword
                     }))
-                console.log('Checked for 4 clicks')
                 }
             else if (password.uppercase && password.lowercase && password.number) {
                 let mix = uppercase.concat(lowercase).concat(number)
@@ -55,7 +54,22 @@ function handleChange(event) {
                     ...prev,
                     pwd: generatedPassword
                 }))
-                console.log("checked for 3 cases")
+            }
+            else if (password.uppercase && password.number && password.symbol) {
+                let mix = uppercase.concat(number).concat(symbols)
+                let generatedPassword = result += mix.charAt(Math.floor(Math.random() * 46))
+                setPassword(prev => ({
+                    ...prev,
+                    pwd: generatedPassword
+                }))                
+            }
+          else if (password.lowercase && password.number && password.symbol) {
+                let mix = lowercase.concat(number).concat(symbols)
+                let generatedPassword = result += mix.charAt(Math.floor(Math.random() * 46))
+                setPassword(prev => ({
+                    ...prev,
+                    pwd: generatedPassword
+                }))                
             }
             else if (password.uppercase && password.lowercase) {
                 let mixChar = uppercase.concat(lowercase)
