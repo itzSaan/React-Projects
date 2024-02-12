@@ -1,0 +1,70 @@
+#contact {
+    height: 100vh;
+    background: var(--contact-gradient), url('images/contact-bg.jpeg')  no-repeat center center;
+    background-size: cover;    
+}
+
+#contact .contact-section-wrap{
+    width: 100%;
+}
+
+#contact .contact-section-wrap .left, .right{
+    width: 100%;
+}
+
+#contact .contact-section-wrap .left .text-grey {
+    color: #aaa;
+}
+
+#contact .contact-section-wrap .left .uppercase {
+    text-transform: uppercase;
+}
+
+#contact .contact-section-wrap .left p {
+    margin-top: 0;
+}
+
+#contact .contact-section-wrap .left i {
+    font-size: 1.5rem;
+}
+
+#contact .contact-section-wrap .left .social {
+    margin-top: 1rem;
+} 
+
+#contact .contact-section-wrap .right{
+    background-color: #fff;
+    max-width: 400px;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+#contact .contact-section-wrap .right h2{
+    color: #000000;
+}
+
+#contact .contact-section-wrap .right input, 
+#contact .contact-section-wrap .right textarea,
+#contact .contact-section-wrap .right button{
+    background-color: #fff;
+    width: 100%;
+    padding: .75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#contact .contact-section-wrap .right button{
+    background-color: dodgerblue;
+    color: #fff;
+    border-color: dodgerblue;
+    cursor: pointer;
+}
+
+@media (min-width : 768px) {
+    #contact .contact-section-wrap .left .social {
+        margin-top: 4rem;
+    } 
+    #contact .contact-section-wrap .right{       
+        padding: 2rem;       
+    }
+}

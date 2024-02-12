@@ -1,0 +1,89 @@
+#works {
+    height: 100vh;
+    background-color: #0d0d0d;
+    overflow: hidden;
+}
+
+#works .works-wrap {  
+   width: 100%; 
+   height: 100%;
+   display: flex;
+   flex-direction: column; 
+   justify-content: center;
+}
+#works .works-wrap .swiper {
+    display: block;
+    max-width: 400px;
+    /* max-height: max-content; */
+    width: 100%;
+    height: auto;
+    margin-block: 5% 10%;
+  }
+
+  #works .works-wrap .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    /* outline: 3px solid rgb(255, 255, 255); */
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.4);
+  }
+
+  #works .works-wrap .swiper-slide .project-text-wrap {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  #works .works-wrap .swiper-slide .project-link {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #0001;
+  }
+  #works .works-wrap .swiper-slide .project-link:hover {
+    text-decoration: none;
+    background-color: #0002;
+  }
+
+  #works .works-wrap .swiper-slide:nth-child(1n) {
+    background-color: rgb(0, 119, 83);
+  }
+
+ #works .works-wrap .swiper-slide:nth-child(2n) {
+    background-color: rgb(116, 102, 0);
+  }
+
+ #works .works-wrap .swiper-slide:nth-child(3n) {
+    background-color: rgb(0, 99, 124);
+  }
+
+ #works .works-wrap .swiper-slide:nth-child(4n) {
+    background-color: rgb(70, 131, 0);
+  }
+
+ #works .works-wrap .swiper-slide:nth-child(5n) {
+    background-color: rgb(136, 77, 0);
+  }
+
+#works .works-wrap  .swiper-slide:nth-child(6n) {
+    background-color: rgb(126, 13, 37);
+  }
+
+#works .works-wrap  .swiper-slide:nth-child(7n) {
+    background-color: rgb(24, 109, 3);
+  }
+
+ #works .works-wrap .swiper-slide:nth-child(8n) {
+    background-color: rgb(41, 0, 107);
+  }
+
+#works .works-wrap  .swiper-slide:nth-child(9n) {
+    background-color: rgb(0, 49, 122);
+}

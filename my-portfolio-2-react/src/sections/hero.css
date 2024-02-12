@@ -1,0 +1,124 @@
+.hero{
+    height: auto;
+    background-color: #000000;
+    background-image: radial-gradient(at 77% 26%, hsla(311, 90%, 62%, 1) 0, hsla(311, 90%, 62%, 0) 50%),
+    radial-gradient(at 96% 72%, hsla(221, 85%, 60%, 1) 0, hsla(221, 85%, 60%, 0) 50%);
+    color: var(--white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.row{
+    height: 100vh;
+    width: 100%;    
+    display: flex;       
+    justify-content: space-between;
+    align-items: center;
+}
+.col{
+    width: auto;    
+}
+.col-text .first-text{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+.col-text .name-text{
+    font-size: 5rem;
+    line-height: 5rem;
+    font-family: var(--heading);
+    text-transform: uppercase;  
+    margin: 0;
+    font-weight: 300; 
+}
+.col-text .role{
+    font-size: 1.25rem;    
+    margin: 0;    
+}
+.col-text .find-me-on{
+    font-size: 1rem;    
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.col-text .find-me-on .social-icons-wrapper{
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+}
+.col-text .find-me-on .social-icons-wrapper i{
+    font-size: 1.75rem;
+}
+
+.row .col-img .avtar{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    border: 4px solid;
+    border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+    .row {
+        /* flex-direction:row ; */
+    }   
+}
+
+
+@media (max-width: 768px) {    
+    
+    .col-text .first-text{
+        font-size: 1.5rem;
+    }
+    .col-text .name-text{
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+    .col-text .role{
+        font-size: 1.25rem;  
+    }
+   
+    .col-text .find-me-on .social-icons-wrapper i{
+        font-size: 1.5rem;
+    }
+    
+    .row .col-img .avtar{        
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero{
+        height: auto; 
+    }
+    
+    .row{        
+        flex-direction: column-reverse;      
+        justify-content: center;
+        gap: 2rem;
+    }
+    .col{
+        /* padding: 2rem; */
+        width: auto;    
+    }
+    .col-text .first-text{
+        font-size: 1.25rem;
+    }
+    .col-text .name-text{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    .col-text .role{
+        font-size: 1.2rem;  
+    }
+   
+    .col-text .find-me-on .social-icons-wrapper i{
+        font-size: 1.5rem;
+    }
+    
+    .row .col-img .avtar{        
+        max-width: 300px;
+    }
+}
+

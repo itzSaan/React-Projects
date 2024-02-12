@@ -1,0 +1,37 @@
+:root {
+  --black : #121212;
+  --grey  : #3d3d3d;
+  --white : #eeeeee;
+  --btn-gradient:  linear-gradient(113deg, #00DBDE 0%, #FC00FF 100%);    
+  --contact-gradient:  linear-gradient(113deg, #181818d3 0%, #05020fc4 100%);    
+  --hero-gradient: radial-gradient(at 97% 26%, hsla(311, 90%, 62%, 1) 0, hsla(311, 90%, 62%, 0) 50%),
+  radial-gradient(at 96% 72%, hsla(221, 85%, 60%, 1) 0, hsla(221, 85%, 60%, 0) 50%);
+ 
+  --heading : 'Josefin Sans', sans-serif;
+  --para : 'Raleway', sans-serif;
+
+  background-color: var(--black);
+  color: var(--white);
+  
+}
+
+*{
+  font-family: 'Raleway','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;  
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media (min-width : 768px) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+
