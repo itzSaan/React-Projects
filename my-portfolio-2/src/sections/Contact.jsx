@@ -42,11 +42,11 @@ export default function Contact() {
                         <div className="flex f-col gap-1 social">
                             <span>find me on.</span>
                             <div className="social-icon-wrap flex gap-1">
-                                <a href="https://x.com/dev_saan"><i className="ri-twitter-fill"></i></a>
-                                <a href="https://instagram.com/dev_saan"><i className="ri-instagram-fill"></i></a>
-                                <a href="https://github.com/itzSaan"><i className="ri-github-fill"></i></a>
-                                <a href="https://codepen.io/dev_saan"><i className="ri-codepen-fill"></i></a>
-                                <a href="https://linkedin.com/in/sangramkishor"><i className="ri-linkedin-fill"></i></a>
+                                <a href="https://x.com/dev_saan" title="Twitter / X"><i className="ri-twitter-fill"></i></a>
+                                <a href="https://instagram.com/dev_saan" title="Instagram"><i className="ri-instagram-fill"></i></a>
+                                <a href="https://github.com/itzSaan" title="Github"><i className="ri-github-fill"></i></a>
+                                <a href="https://codepen.io/dev_saan" title="Codepen.io"><i className="ri-codepen-fill"></i></a>
+                                <a href="https://linkedin.com/in/sangramkishor" title="LinkedIn"><i className="ri-linkedin-fill"></i></a>
                             </div>                            
                            
                         </div>
