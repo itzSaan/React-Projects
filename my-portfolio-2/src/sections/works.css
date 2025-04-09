@@ -1,0 +1,110 @@
+#works {
+    /* height: 100vh; */
+    background-color: #0d0d0d;
+    overflow: hidden;
+}
+
+#works .works-wrap {  
+   width: 100%; 
+   height: 100%;
+   display: flex;
+   flex-direction: column; 
+   justify-content: center;
+   gap: 2rem;
+}
+#works .works-wrap .swiper {
+    display: block;
+    max-width: 400px;
+    /* max-height: max-content; */
+    width: 100%;
+    height: auto;
+    margin-block: 5% 10%;
+  }
+
+  #works .works-wrap .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    /* outline: 3px solid rgb(255, 255, 255); */
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.4);
+  }
+
+  #works .works-wrap .wrapper .project-text-wrap {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  #works .works-wrap .wrapper .project-link {
+    font-size: .9rem;
+    display: block;
+    width: 100%;
+    height: 3rem;
+    margin-top: auto;
+    /* text-decoration: underline; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: .8rem;
+  }
+  #works .works-wrap .wrapper .project-link:hover {
+    text-decoration: none;
+    background-color: #0002;
+  }
+
+#works .works-wrap .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, auto));
+  gap: 2rem;
+  place-content: center;
+}
+
+@media (max-width: 992px) {
+  #works .works-wrap .wrapper {
+    grid-template-columns: repeat(2, minmax(240px, auto));
+  }
+}
+
+
+@media (max-width: 567px) {
+  #works .works-wrap .wrapper {
+    grid-template-columns: repeat(1, minmax(240px, auto));
+  }
+}
+
+.project-card {
+  max-width: 400px;
+  background-color: var(--black);
+  background: linear-gradient(to top, var(--black), #1d1d1d) padding-box, linear-gradient(135deg, transparent 10%, #f441a5 , #03a9f4) border-box;
+  transition: all 0.4s;
+  border: 3px solid transparent;
+  padding: 10px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: .8rem;
+}
+.project-card h2 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: var(--body);
+}
+.project-card p {
+  font-weight: 400;
+  font-size: .85rem;
+  color: #fff8;
+  line-height: 1.5;
+}
+.project-card:hover {
+  background-size: 300% 100%;
+}
+

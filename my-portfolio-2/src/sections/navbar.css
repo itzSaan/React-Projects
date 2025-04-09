@@ -1,0 +1,106 @@
+
+.navbar{   
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(13, 14, 15, 0.8); 
+    color: #ddd;
+    backdrop-filter: blur(6px);
+    z-index: 999;
+}
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .navbar-brand {
+    line-height: 1;
+}
+.navbar .navbar-brand h2{    
+    font-size: 1.65rem;  
+    line-height: 1.2;  
+    font-weight: 700;
+    color: #00DBDE;
+    background: linear-gradient(0deg,#00DBDE, #FC00FF);
+    background: -webkit-linear-gradient(0deg,#00DBDE, #FC00FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar-nav {        
+    display: flex;
+    /* gap: 10px; */
+}
+
+.navbar-nav .nav-link{
+    font-size: 14px;
+    line-height: 1;
+    color: inherit;
+    padding: 1.25rem 1.5rem;    
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    overflow: hidden;
+    transition: 0.4s all;
+    border-bottom: 2px solid transparent;   
+}
+.navbar .menu-btn {
+    width: 3rem;
+    height: 3rem;
+    margin-block: 14px;
+    background-color: #0004;
+    padding: .5rem;
+    border: none;  
+    color: inherit;  
+    display: none;
+    transition: all 0.4s;
+}
+
+.navbar .menu-btn .bars-icon {
+    width: 2rem;
+    height: 2rem;
+}
+.navbar-nav .nav-link .nav-icon {
+    height: 18px;
+    width: auto;
+    color: inherit;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: hsla(221, 85%, 60%, 1);
+}
+
+@media  (max-width : 992px) {    
+    .navbar .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .navbar .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        background: rgba(0, 0, 0, 0.949);
+        backdrop-filter: blur(6px)!important;
+        position: absolute;
+        right: -100%;
+        top: 76px;
+        opacity: 0;
+        z-index: 99;
+        transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .navbar-nav.show {
+        opacity: 1;
+        right: 0%;
+    }
+    .navbar-nav .nav-link{       
+       color: #fff;
+    }
+
+    .navbar .menu-btn {
+        display: block;
+    }
+}

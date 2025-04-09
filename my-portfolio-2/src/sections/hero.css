@@ -1,0 +1,180 @@
+.hero{
+    height: 100vh;
+    background-color: #000000;
+    background-image: radial-gradient(at 77% 26%, hsla(311, 90%, 62%, 1) 0, hsla(311, 90%, 62%, 0) 50%),
+    radial-gradient(at 96% 72%, hsla(221, 85%, 60%, 1) 0, hsla(221, 85%, 60%, 0) 50%);
+    color: var(--white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.row{
+    height: 100%;
+    width: 100%;    
+    display: flex;       
+    justify-content: space-between;
+    align-items: center;
+}
+.col{
+    width: auto;    
+}
+.col-text .first-text{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+.col-text .name-text{
+    font-size: 5rem;
+    line-height: 5rem;
+    font-family: var(--heading);
+    text-transform: uppercase;  
+    margin: 0;
+    font-weight: 300; 
+}
+.col-text .role{
+    font-size: 1.25rem;    
+    margin-top: 10px;    
+}
+.col-text .find-me-on{
+    font-size: 1rem;    
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.col-text .find-me-on .social-icons-wrapper{
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+}
+.col-text .find-me-on .social-icons-wrapper i{
+    font-size: 1.75rem;
+}
+.row .col-img {
+    position: relative;
+}
+.row .col-img .avtar{
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    border: 6px solid;
+    border-radius: 50%;
+}
+
+.row .col-img::before {
+    content: "";
+    position: absolute;
+    width: 104%;
+    height: 104%;
+    /* background: hsla(221, 85%, 60%, 1); */
+    border-radius: 50%;
+    /* background-image: radial-gradient(at 77% 26%, hsla(311, 90%, 62%, 1) 0, hsla(311, 65%, 29%, 0) 50%),
+    radial-gradient(at 96% 72%, hsla(221, 85%, 60%, 1) 0, hsla(221, 70%, 26%, 0) 50%); */
+    background-color: #9b59b6;
+  background-image: linear-gradient(#ff49a4, #72fc6e, #48fcf6);
+  
+    top: -2%;
+    left: -2%;
+    z-index: 0;
+    transform: scaleX(1.03);
+    filter: blur(14px);
+    animation: rotate 2s cubic-bezier(0.68, -0.55, 0.265, 1.55)  infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+@media (max-width: 992px) {
+    .row {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .col-text .first-text{
+        font-size: 1.75rem;
+    }
+    .col-text .name-text{
+        font-size: 4.25rem;
+        line-height: 4rem;
+    }
+    .col-text .find-me-on .social-icons-wrapper{
+        width: 300px;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .col-text .find-me-on .social-icons-wrapper i{
+        font-size: 1.5rem;
+    }  
+}
+
+
+@media (max-width: 768px) {    
+    
+    .col-text .first-text{
+        font-size: 1.5rem;
+    }
+    .col-text .name-text{
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+    .col-text .role{
+        font-size: 1.25rem;  
+    }
+   
+    .col-text .find-me-on .social-icons-wrapper i{
+        font-size: 1.5rem;
+    }
+    
+    .row .col-img .avtar{        
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero{
+        height: 100dvh;
+        max-height: auto; 
+        background-image: radial-gradient(at 105% 6%, hsla(311, 90%, 62%, 1) 0, hsla(311, 90%, 62%, 0) 50%),
+    radial-gradient(at 06% 2%, hsla(221, 85%, 60%, 1) 0, hsla(221, 85%, 60%, 0) 50%);
+    }
+    
+    .row{     
+        height: fit-content;   
+        flex-direction: column-reverse;      
+        justify-content: space-between;
+    }
+    .col{
+        /* padding: 2rem; */
+        width: auto;    
+    }
+    .col-text .first-text{
+        font-size: 1.25rem;
+    }
+    .col-text .name-text{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    .col-text .role{
+        font-size: 1.2rem;  
+    }
+   
+    .col-text .find-me-on .social-icons-wrapper i{
+        font-size: 1.5rem;
+    }
+    
+    .row .col-img .avtar{        
+        max-width: 300px;
+    }
+}
+
